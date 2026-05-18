@@ -1,8 +1,8 @@
 TRAIN:
-  train_batch_size: 32
+  train_batch_size: 8
   lr: 0.0003
 
-  valid_batch_size: 1
+  valid_batch_size: 8
 
   image_size: [224,224]
 
@@ -18,9 +18,19 @@ TRAIN:
   model_save_path_max_dice: ./save_model
   model_save_filename_max_dice: medseg_max_dice
 
+  custom_log_dir: ./save_model
+
 MODEL:
+#  bert_type: ./lib/BiomedVLP-CXR-BERT-specialized
   bert_type: ./lib/BiomedNLP-BiomedBERT-base-uncased-abstract
+#  bert_type: ./lib/Bio_ClinicalBERT
+#  bert_type: ./lib/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
+#  bert_type: ./lib/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
   vision_type: ./lib/convnext-tiny-224
+#  vision_type: ./lib/swin-tiny-patch4-window7-224
+#  vision_type: ./lib/dinov3-convnext-tiny-pretrain-lvd1689m
+#  vision_type: ./lib/convnextv2-tiny-1k-224
+#  vision_type: ./lib/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
   project_dim: 768
 
 DATA:
@@ -30,9 +40,15 @@ DATA:
   test_csv_path: ./data/QaTa-Covid19-v2/prompt/test.csv
   test_root_path: ./data/QaTa-Covid19-v2/Test
 
+#  train_csv_path: ./data/MoNuSeg/prompt/train.csv
+#  train_root_path: ./data/MoNuSeg/Train
+#
+#  test_csv_path: ./data/MoNuSeg/prompt/test.csv
+#  test_root_path: ./data/MoNuSeg/Test
+
 #  train_csv_path: ./data/MosMedDataPlus/Lan/prompt/train.csv
 #  train_root_path: ./data/MosMedDataPlus/Lan/Train
-
+#
 #  test_csv_path: ./data/MosMedDataPlus/Lan/prompt/test.csv
 #  test_root_path: ./data/MosMedDataPlus/Lan/Test
 

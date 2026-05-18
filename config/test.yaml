@@ -1,0 +1,40 @@
+TRAIN:
+  train_batch_size: 8
+  lr: 0.0003
+
+  valid_batch_size: 1
+
+  image_size: [224,224]
+
+  min_epochs: 100
+  max_epochs: 200
+  patience: 100
+
+  device: 1
+
+  model_save_path_min_loss: ./save_model
+  model_save_filename_min_loss: medseg_min_loss
+
+  model_save_path_max_dice: ./save_model
+  model_save_filename_max_dice: medseg_max_dice
+
+  custom_log_dir: ./save_model
+
+MODEL:
+  bert_type: ./lib/BiomedNLP-BiomedBERT-base-uncased-abstract
+  vision_type: ./lib/convnext-tiny-224
+  project_dim: 768
+
+DATA:
+  train_csv_path: ./data/QaTa-Covid19-v2/prompt/train.csv
+  train_root_path: ./data/QaTa-Covid19-v2/Train
+
+  test_csv_path: ./data/QaTa-Covid19-v2/prompt/test.csv
+  test_root_path: ./data/QaTa-Covid19-v2/Test
+
+#  train_csv_path: ./data/MosMedDataPlus/Lan/prompt/train.csv
+#  train_root_path: ./data/MosMedDataPlus/Lan/Train
+
+#  test_csv_path: ./data/MosMedDataPlus/Lan/prompt/test.csv
+#  test_root_path: ./data/MosMedDataPlus/Lan/Test
+
