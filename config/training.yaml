@@ -37,18 +37,6 @@ DATA:
   train_csv_path: ./data/QaTa-Covid19-v2/prompt/train.csv
   train_root_path: ./data/QaTa-Covid19-v2/Train
 
-  test_csv_path: ./data/QaTa-Covid19-v2/prompt/test.csv
-  test_root_path: ./data/QaTa-Covid19-v2/Test
-
-#  train_csv_path: ./data/MoNuSeg/prompt/train.csv
-#  train_root_path: ./data/MoNuSeg/Train
-#
-#  test_csv_path: ./data/MoNuSeg/prompt/test.csv
-#  test_root_path: ./data/MoNuSeg/Test
-
-#  train_csv_path: ./data/MosMedDataPlus/Lan/prompt/train.csv
-#  train_root_path: ./data/MosMedDataPlus/Lan/Train
-#
-#  test_csv_path: ./data/MosMedDataPlus/Lan/prompt/test.csv
-#  test_root_path: ./data/MosMedDataPlus/Lan/Test
+  test_csv_path: ./data/QaTa-Covid19-v2/prompt/val.csv
+  test_root_path: ./data/QaTa-Covid19-v2/Val
 
