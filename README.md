@@ -16,8 +16,8 @@ The default dataset paths in `config/training.yaml` are:
 
 - `./data/QaTa-Covid19-v2/prompt/train.csv`
 - `./data/QaTa-Covid19-v2/Train`
-- `./data/QaTa-Covid19-v2/prompt/test.csv`
-- `./data/QaTa-Covid19-v2/Test`
+- `./data/QaTa-Covid19-v2/prompt/val.csv`
+- `./data/QaTa-Covid19-v2/Val`
 
 The config file also contains commented examples for other datasets:
 
